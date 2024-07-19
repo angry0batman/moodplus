@@ -1,0 +1,39 @@
+/* Navigation styles */
+.Navigation {
+    background: linear-gradient(to right, #ed690b, #ee0979);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Navigation h1 {
+    color: black; /* Change the text color to black */
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .Navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Navigation ul li {
+    margin: 0 15px;
+  }
+  
+  .Navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .Navigation ul li a:hover {
+    text-decoration: underline;
+  }
+  

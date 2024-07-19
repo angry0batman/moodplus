@@ -1,38 +1,105 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* App container */
 .App {
   text-align: center;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Content container */
+.content {
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Section styles */
+.MoodDetection, .AIContent, .FunnyChatbot, .SecretChat {
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.MoodDetection:hover, .AIContent:hover, .FunnyChatbot:hover, .SecretChat:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styles */
+h1 {
+  color: #e61414;
+  font-size: 48px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #060606, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  color: #555555;
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h2:after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: #ff6a00;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Button styles */
+button {
+  margin: 10px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ff6a00;
   color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #ee0979;
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+  background-color: #d4086b;
+  transform: translateY(0);
+}
+
+/* Image styles */
+.MoodDetection img, .AIContent img, .FunnyChatbot img, .SecretChat img {
+  width: 80%;
+  height: 500px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }

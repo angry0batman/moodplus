@@ -1,0 +1,12 @@
+/* Footer styles */
+.Footer {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+  }
+  
